@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import ProgressBars from "./pages/ProgressBars/ProgressBars";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Route path="/contact-me">
         <Contact />
       </Route>
+      <Footer />
     </Fragment>
   );
 };
