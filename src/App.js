@@ -4,6 +4,7 @@ import { Route, Redirect } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import ProgressBars from "./pages/ProgressBars/ProgressBars";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
       </Route>
       <Route path="/portfolio">
         <Portfolio />
+      </Route>
+      <Route path="/contact-me">
+        <Contact />
       </Route>
     </Fragment>
   );
