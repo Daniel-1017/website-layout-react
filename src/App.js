@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { Route, Redirect } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import ProgressBars from "./pages/ProgressBars/ProgressBars";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
       </Route>
       <Route path="/about-me">
         <ProgressBars />
+      </Route>
+      <Route path="/portfolio">
+        <Portfolio />
       </Route>
     </Fragment>
   );
