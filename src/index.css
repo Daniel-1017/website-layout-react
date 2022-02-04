@@ -34,4 +34,13 @@ html {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  border: none;
+  cursor: not-allowed;
+  background-color: #5b5b5b;
+  color: #7c7c7c;
+}
+
 /* End of Reset and Common Styles */
