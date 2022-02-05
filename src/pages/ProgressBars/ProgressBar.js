@@ -43,7 +43,7 @@ const ProgressBar = () => {
   return (
     <div className={classes["progress-bars-wrapper"]}>
       {skills.map((progressBar) => (
-        <div className={classes["progress-bar"]}>
+        <div key={progressBar.id} className={classes["progress-bar"]}>
           <p className={classes["progress-text"]}>
             {progressBar.skillName}
             <span>{progressBar.knowledge}</span>%

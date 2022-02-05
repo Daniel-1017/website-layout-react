@@ -12,54 +12,63 @@ import classes from "./Portfolio.module.css";
 
 const projects = [
   {
+    id: 1,
     projectName: "architect website",
     projectTechnologies: "HTML / CSS / JS",
     image: Project1,
     videoLink: "https://www.youtube.com/watch?v=3J-EFMzz94g",
   },
   {
+    id: 2,
     projectName: "Budget App",
     projectTechnologies: "ReactJS",
     image: Project2,
     videoLink: "https://www.youtube.com/watch?v=fDffQYs2WB0",
   },
   {
+    id: 3,
     projectName: "wine house",
     projectTechnologies: "HTML / CSS / JS",
     image: Project3,
     videoLink: "https://www.youtube.com/watch?v=jtmuopTpzGE",
   },
   {
+    id: 4,
     projectName: "Task Manager",
     projectTechnologies: "ReactJS",
     image: Project4,
     videoLink: "https://www.youtube.com/watch?v=fqup-BL3VjI",
   },
   {
+    id: 5,
     projectName: "The Road",
     projectTechnologies: "HTML / CSS / JS",
     image: Project5,
     videoLink: "https://www.youtube.com/watch?v=qmyN7lYY_xo",
   },
   {
+    id: 6,
     projectName: "food recepie app",
     projectTechnologies: "ReactJS",
     image: Project6,
     videoLink: "https://www.youtube.com/watch?v=d1vT4kkTCaw",
   },
   {
+    id: 7,
     projectName: "slideshow",
     projectTechnologies: "HTML / CSS / JS",
     image: Project7,
     videoLink: "https://www.youtube.com/watch?v=1qhSSp2q7n4",
   },
   {
+    id: 8,
     projectName: "hamburger menu",
     projectTechnologies: "HTML / CSS / JS",
     image: Project8,
     videoLink: "https://www.youtube.com/watch?v=9Q7wy8r3i8w",
   },
   {
+    id: 9,
     projectName: "CSS grid menu",
     projectTechnologies: "HTML / CSS / JS",
     image: Project9,
@@ -73,7 +82,7 @@ const Portfolio = () => {
       <h2 className="section-heading">My Projects</h2>
       <div className={`${classes["projects-wrapper"]} center`}>
         {projects.map((project) => (
-          <div className={classes.project}>
+          <div key={project.id} className={classes.project}>
             <div className={classes["project-text"]}>
               <h2 className={classes["project-name"]}>{project.projectName}</h2>
               <h4 className={classes["project-technologies"]}>

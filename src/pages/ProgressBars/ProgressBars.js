@@ -11,18 +11,22 @@ import { FaRocket } from "react-icons/fa";
 
 const icons = [
   {
+    id: 1,
     iconName: <FaLightbulb className={classes.icon} />,
     heading: "Creative",
   },
   {
+    id: 2,
     iconName: <FaCut className={classes.icon} />,
     heading: "Problem Solving",
   },
   {
+    id: 3,
     iconName: <FaTachometerAlt className={classes.icon} />,
     heading: "Fast",
   },
   {
+    id: 4,
     iconName: <FaRocket className={classes.icon} />,
     heading: "Dynamic",
   },
@@ -37,7 +41,7 @@ const ProgressBars = () => {
       </div>
       <div className={classes.services}>
         {icons.map((icon) => (
-          <div className={classes.service}>
+          <div key={icon.id} className={classes.service}>
             {icon.iconName}
             <h2 className={classes["service-heading"]}>{icon.heading}</h2>
           </div>
