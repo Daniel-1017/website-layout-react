@@ -1,4 +1,9 @@
 import React from "react";
+import classes from "../pages/ProgressBars/ProgressBars.module.css";
+import { FaLightbulb } from "react-icons/fa";
+import { FaCut } from "react-icons/fa";
+import { FaTachometerAlt } from "react-icons/fa";
+import { FaRocket } from "react-icons/fa";
 
 const skills = [
   {
@@ -38,9 +43,33 @@ const skills = [
   },
 ];
 
+const icons = [
+  {
+    id: 1,
+    iconName: <FaLightbulb className={classes.icon} />,
+    heading: "Creative",
+  },
+  {
+    id: 2,
+    iconName: <FaCut className={classes.icon} />,
+    heading: "Problem Solving",
+  },
+  {
+    id: 3,
+    iconName: <FaTachometerAlt className={classes.icon} />,
+    heading: "Fast",
+  },
+  {
+    id: 4,
+    iconName: <FaRocket className={classes.icon} />,
+    heading: "Dynamic",
+  },
+];
+
 const ProgressBarData = () => {
   return {
     skills,
+    icons,
   };
 };
 
