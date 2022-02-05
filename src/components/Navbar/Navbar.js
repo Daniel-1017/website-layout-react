@@ -1,39 +1,23 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 import classes from "./Navbar.module.css";
+import NavLinks from "../../data/NavLinks";
 
 const Navbar = () => {
+  const { navLinks } = NavLinks();
   return (
     <Fragment>
       <nav className={`${classes.navbar} center`}>
-        <NavLink
-          to="/home"
-          activeClassName={classes.change}
-          className={classes["navbar-link"]}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about-me"
-          activeClassName={classes.change}
-          className={classes["navbar-link"]}
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/portfolio"
-          activeClassName={classes.change}
-          className={classes["navbar-link"]}
-        >
-          Portfolio
-        </NavLink>
-        <NavLink
-          to="/contact-me"
-          activeClassName={classes.change}
-          className={classes["navbar-link"]}
-        >
-          Contact
-        </NavLink>
+        {navLinks.map((navLink) => (
+          <NavLink
+            key={navLink.id}
+            to={navLink.to}
+            activeClassName={classes.change}
+            className={classes["navbar-link"]}
+          >
+            {navLink.linkText}
+          </NavLink>
+        ))}
       </nav>
     </Fragment>
   );
