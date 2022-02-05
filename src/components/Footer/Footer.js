@@ -1,26 +1,22 @@
 import React from "react";
 import classes from "./Footer.module.css";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import FooterLinks from "../../data/FooterLinks";
 
 const Footer = () => {
+  const { footerLinks } = FooterLinks();
   return (
     <footer className={`${classes["section-5"]} center`}>
       <div className={classes["social-media"]}>
-        <a href="/" className={classes["social-media-link"]}>
-          <FaGithubSquare className={classes.icon} />
-        </a>
-        <a href="/" className={classes["social-media-link"]}>
-          <FaYoutube className={classes.icon} />
-        </a>
-        <a href="/" className={classes["social-media-link"]}>
-          <FaFacebookSquare className={classes.icon} />
-        </a>
-        <a href="/" className={classes["social-media-link"]}>
-          <FaInstagramSquare className={classes.icon} />
-        </a>
+        {footerLinks.map((footerLink) => (
+          <a
+            key={footerLink.id}
+            href={footerLink.link}
+            target="_blank"
+            className={classes["social-media-link"]}
+          >
+            {footerLink.icon}
+          </a>
+        ))}
       </div>
       <p className={classes.copyright}>
         Copyright &copy; CodeAndCreate. All Rights Reserved.
