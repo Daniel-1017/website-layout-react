@@ -1,0 +1,65 @@
+[33mcommit 85cc4d09e3b3d51b79dd62596c2cf1b95881f1b6[m[33m ([m[1;36mHEAD -> [m[1;32mpersonal-portfolio-adjustments[m[33m, [m[1;31morigin/personal-portfolio[m[33m, [m[1;32mpersonal-portfolio[m[33m)[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Sat Feb 5 19:03:27 2022 +0100
+
+    Add key prop
+
+[33mcommit 5096c8214d610a93407027cf321d311ae463ea96[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Fri Feb 4 23:39:43 2022 +0100
+
+    Authentication for the contact form + custom hook
+
+[33mcommit 3561d5d2b8ddd5c15e0f2aaa04f5f9d04cbe51b4[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 19:33:08 2022 +0100
+
+    Footer
+
+[33mcommit bdc31c5f18b2d8429b0f784e33eac154a5e37841[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 19:26:08 2022 +0100
+
+    Contact page
+
+[33mcommit 30bff4044f116767a20a84f423e8fa957df668ea[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 18:41:13 2022 +0100
+
+    Portfolio page
+
+[33mcommit 6f17c3e7825fc65751c64faa5f5aa0d2e1aa9a89[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 17:51:09 2022 +0100
+
+    About me page
+
+[33mcommit bd705f59dc44f05942e770c7b0a604398c25d8dc[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 16:35:31 2022 +0100
+
+    Landing page
+
+[33mcommit 959df757c127ca9f972a9b8e45d9fc20da6ff59b[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Thu Feb 3 16:11:51 2022 +0100
+
+    Navbar
+
+[33mcommit 2f4962b7ac87fffb7d17998143ec2fc25eeafbac[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Tue Feb 1 22:11:46 2022 +0100
+
+    first commit in personal portfolio
+
+[33mcommit 23b1acca12f1ee2ad49bf0e2a9800159ac7910f6[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Tue Feb 1 22:07:20 2022 +0100
+
+    first commit in master
+
+[33mcommit 0fb7b01f478a77e8b37d6d47467a876b7a687b76[m
+Author: Daniel Frimu <frimudaniel17@gmail.com>
+Date:   Tue Feb 1 21:58:14 2022 +0100
+
+    Initialize project using Create React App

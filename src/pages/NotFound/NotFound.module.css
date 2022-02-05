@@ -1,0 +1,28 @@
+.not-found {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found > div {
+  text-align: center;
+}
+
+.error {
+  font-size: 15rem;
+}
+
+.not-found-text {
+  font-size: 4rem;
+}
+
+.back-to-homepage {
+  font-size: 2rem;
+  background-color: #e41c6f;
+  color: #333;
+  letter-spacing: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
