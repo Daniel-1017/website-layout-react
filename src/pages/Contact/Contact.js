@@ -92,7 +92,7 @@ const Contact = (props) => {
         {(nameInputHasError || emailInputHasError || textInputHasError) && (
           <p style={{ color: "#7c7c7c", fontSize: "18px" }}>Invalid Form</p>
         )}
-        <button disabled={!formIsValid}>
+        <button className={classes["contact-btn"]} disabled={!formIsValid}>
           {!formIsValid ? "can't submit" : "submit"}
         </button>
       </form>

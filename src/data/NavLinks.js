@@ -19,6 +19,11 @@ const navLinks = [
     to: "/contact-me",
     linkText: "Contact",
   },
+  {
+    id: 5,
+    to: "/posts",
+    linkText: "Posts",
+  },
 ];
 
 const NavLinks = () => {

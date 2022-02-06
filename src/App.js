@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import NotFound from "./pages/NotFound/NotFound";
+import PostsPage from "./pages/PostsPage/PostsPage";
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
         </Route>
         <Route path="/contact-me">
           <Contact />
+        </Route>
+        <Route path="/posts">
+          <PostsPage />
         </Route>
         <Route path="*">
           <NotFound />
