@@ -45,7 +45,8 @@ button:disabled:active {
 
 /* End of Reset and Common Styles */
 
-button {
+button,
+select {
   background-color: transparent;
   border: none;
   cursor: pointer;

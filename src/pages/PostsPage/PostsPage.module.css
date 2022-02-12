@@ -59,3 +59,13 @@
   color: #fff;
   border-radius: 5px;
 }
+
+.posts-label {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.posts-per-page {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}

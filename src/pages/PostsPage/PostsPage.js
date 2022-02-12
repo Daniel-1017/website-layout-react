@@ -7,7 +7,7 @@ const PostsPage = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     fetchPostsHandler();
@@ -35,9 +35,26 @@ const PostsPage = () => {
     setCurrentPage(pageNumber);
   };
 
+  const postsPerPageHandler = (e) => {
+    setPostsPerPage(e.target.value);
+  };
+
   return (
     <section className={classes["section-6"]}>
       <h2 className="section-heading">Posts</h2>
+      <label htmlFor="posts-per-page" className={classes["posts-label"]}>
+        Posts per page
+      </label>
+      <select
+        id="posts-per-page"
+        value={postsPerPage}
+        onChange={postsPerPageHandler}
+        className={classes["posts-per-page"]}
+      >
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+      </select>
       <div className={classes["posts-wrapper"]}>
         <Posts posts={currentPosts} loading={loading} />
         <Pagination
