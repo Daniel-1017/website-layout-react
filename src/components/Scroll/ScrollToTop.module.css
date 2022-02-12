@@ -1,0 +1,21 @@
+.scroll-to-top {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #e41c6f;
+  color: #fff;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  font-size: 2.5rem;
+  animation: scrollTop 0.2s;
+}
+
+@keyframes scrollTop {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

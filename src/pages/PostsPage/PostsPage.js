@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ScrollToTop from "../../components/Scroll/ScrollToTop";
 import Pagination from "./Pagination";
 import Posts from "./Posts";
 import classes from "./PostsPage.module.css";
@@ -42,19 +43,20 @@ const PostsPage = () => {
   return (
     <section className={classes["section-6"]}>
       <h2 className="section-heading">Posts</h2>
-      <label htmlFor="posts-per-page" className={classes["posts-label"]}>
-        Posts per page
-      </label>
-      <select
-        id="posts-per-page"
-        value={postsPerPage}
-        onChange={postsPerPageHandler}
-        className={classes["posts-per-page"]}
-      >
-        <option>10</option>
-        <option>15</option>
-        <option>20</option>
-      </select>
+      <div className={classes["posts-per-page"]}>
+        <label htmlFor="posts-per-page" className={classes["posts-label"]}>
+          Posts per page
+        </label>
+        <select
+          id="posts-per-page"
+          value={postsPerPage}
+          onChange={postsPerPageHandler}
+        >
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+        </select>
+      </div>
       <div className={classes["posts-wrapper"]}>
         <Posts posts={currentPosts} loading={loading} />
         <Pagination
@@ -63,6 +65,7 @@ const PostsPage = () => {
           paginate={paginate}
         />
       </div>
+      <ScrollToTop />
     </section>
   );
 };

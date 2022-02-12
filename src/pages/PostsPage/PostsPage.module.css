@@ -60,12 +60,19 @@
   border-radius: 5px;
 }
 
+.posts-per-page {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: fixed;
+  right: 50px;
+  z-index: 1000;
+}
+
 .posts-label {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
 
-.posts-per-page {
+.posts-per-page select {
   font-size: 1.8rem;
-  margin-bottom: 2rem;
 }
