@@ -4,7 +4,7 @@
   height: 4rem;
   background-color: #e41c6f;
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
-  position: absolute;
+  position: fixed;
   z-index: 100;
 }
 

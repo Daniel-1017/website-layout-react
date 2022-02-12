@@ -46,3 +46,16 @@
   cursor: pointer;
   letter-spacing: 0.3rem;
 }
+
+.post-pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e41c6f;
+  color: #fff;
+  border-radius: 5px;
+}
